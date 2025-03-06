@@ -43,8 +43,8 @@ This project is a **dynamic e-commerce product catalog** aimed at connecting you
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/alx-dynamic-e-commerce-product-catalog.git
-cd alx-dynamic-e-commerce-product-catalog
+git clone https://github.com/yourusername/alx-shopsasa.git
+cd alx-shopsasa
 ### 2️⃣ Install Dependencies
 
 ```sh
