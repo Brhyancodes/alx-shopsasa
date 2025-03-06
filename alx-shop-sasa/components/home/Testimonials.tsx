@@ -3,24 +3,27 @@ import { TestimonialCardProps } from "@/interfaces";
 import TestimonialCard from "../common/TestimonialCard";
 import dennis from "@/public/images/dennis.png";
 import kevin from "@/public/images/kevin.png";
-import scott from "@/public/images/scott.png";
+import michelle from "@/public/images/michelle.png";
 
 const testimonials: TestimonialCardProps[] = [
+ {
+  "image": "dennis",
+  "name": "dennis",
+  "message": "ShopSasa has completely transformed my shopping experience. The prices are unbeatable, and the process is super convenient!"
+},
+
   {
-    image: aimee,
-    name: "aimee",
-    message: "All I can say is that they are worth giving a shot.",
-  },
+  "image": "kevin",
+  "name": "kevin",
+  "message": "ShopSasa has been a game changer for me! Great deals and a smooth buying experience. Highly recommended!"
+},
+
   {
-    image: angelina,
-    name: "angelina",
-    message: "Ukulima has really help me increase sales.",
-  },
-  {
-    image: scott,
-    name: "Scott",
-    message: "One of the best  sites ever.",
-  },
+  "image": "michelle",
+  "name": "michelle",
+  "message": "I love how easy it is to find exactly what I need. The prices are unbeatable, and the customer service is top-notch!"
+}
+
 ];
 
 function Testimonials() {
@@ -28,7 +31,7 @@ function Testimonials() {
     <section className="py-10 px-5 bg-avocado text-white">
       <div className={`${quicksand.className} w-[95%] mx-auto text-center`}>
         <h3 className="font-bold text-4xl">Testimonials</h3>
-        <p className="lg:text-lg mt-3">What our customers are saying about us</p>
+        <p className="lg:text-lg mt-3">Hear from Our Happy Comrades</p>
       </div>
 
       <div className="mt-8 w-[90%] mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
