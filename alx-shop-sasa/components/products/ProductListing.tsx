@@ -1,43 +1,44 @@
 import { ProductDetailProps } from "@/interfaces";
-import ProductDetail from "./ProductDetail";
-import headphones from "@/public/images/headphone";
-import npk from "@/public/images/npk.png";
-import pesticide from "@/public/images/pesticides2.png";
-import potash from "@/public/images/potash.png";
+import ProductDetails from "/products/ProductDetails";
+import headphones from "/public/images/heaphones.jpg";
+import laptop from "/public/images/laptop.jpg";
+import charger from "/public/images/charger.jpg";
+import watch from "/public/images/watch.jpg";
+
 import Link from "next/link";
 
 export const items: ProductDetailProps[] = [
   {
     id: 1,
-    imageUrl: maize,
-    name: "Maize seeds",
-    category: "seeds",
-    price: "100",
-    description: "kkn djkbvjbe jkbvrgn rgbjftnb kndknvjdsb gubreugbnb",
+    imageUrl: headphones,
+    name: "Head Phones",
+    category: "Head Phones",
+    price: "1500",
+    description: "Heavy bass headphones,grab one comrade!",
   },
   {
     id: 2,
-    imageUrl: npk,
-    name: "DAP",
-    category: "fertilizer",
-    price: "430",
-    description: "jbdjkbih riohioydkfn vjkabeiwtir hginkbdf jksiorehtioqkfkn",
+    imageUrl:laptop,
+    name: "Gaming Laptop",
+    category: "Electronics",
+    price: "30000",
+    description: "Lorem ipsum lorem ipsum",
   },
   {
     id: 3,
-    imageUrl: pesticide,
-    name: "Altrazine",
-    category: "pesticide",
-    price: "1200",
-    description: "cndjvkbvjreb jkbvubruin ibfurbugbiorvjnv",
+    imageUrl:charger,
+    name: "Portable Charger",
+    category: "Electronics",
+    price: "1500",
+    description: "A portable charger for your phone",
   },
   {
     id: 4,
-    imageUrl: potash,
-    name: "D-A-P",
-    category: "fetilizer",
-    price: "600",
-    description: "kjdvjdjg jkjkdbrgbir ibfibirg oiehgiorgior ibifbg",
+    imageUrl:watch,
+    name: "Smart Watch",
+    category: "Accessories",
+    price: "3000",
+    description: "Lorem ipsum lorem ipsum",
   },
 ];
 
@@ -46,7 +47,7 @@ function ProductListing() {
     <div className="w-11/12 max-w-[85%] mx-auto my-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {items.map((item: ProductDetailProps, idx: number) => (
         <Link key={idx} href={`/products/${encodeURIComponent(item.id)}`}>
-          <ProductDetail {...item} />
+          <ProductDetails {...item} />
         </Link>
       ))}
     </div>

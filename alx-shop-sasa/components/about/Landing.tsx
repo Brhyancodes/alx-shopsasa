@@ -10,8 +10,8 @@ function Landing() {
          Comrade shopping has been made easier! Karibu, Comrade!
         </h2>
         <p className="max-w-2xl text-balance md:text-lg">
-         At ShopSasa, we're committed to making shopping easier for you, Comrades!
-        </p>
+  At ShopSasa, we&apos;re committed to making shopping easier for you, Comrades!
+</p>
       </div>
     </section>
   );

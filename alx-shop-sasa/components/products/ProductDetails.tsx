@@ -1,9 +1,9 @@
-import { ProdcutDetailProps } from "@/interfaces";
+import { ProductDetailProps } from "@/interfaces";
 import { nunito } from "@/fonts";
 import Image from "next/image";
 import Button from "../common/Button";
 
-function ProductDetail({ imageUrl, name, price }: ProdcutDetailProps) {
+function ProductDetail({ imageUrl, name, price }: ProductDetailProps) {
   const addItemToCart = () => {};
 
   return (

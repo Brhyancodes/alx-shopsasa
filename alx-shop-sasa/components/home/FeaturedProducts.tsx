@@ -2,13 +2,13 @@ import { quicksand } from "@/fonts";
 import { CategoryCardProps } from "@/interfaces";
 import CategoryCard from "../common/CategoryCard";
 
-import bluetooth speaker from "@/public/images/bluetooth speaker.jpg";
-import headphones from "@/public/images/heaphones.jpg";
-import television smart from "@/public/images/television smart.jpg";
+import speaker from "/public/images/speaker.jpg";
+import headphones from "/public/images/heaphones.jpg";
+import tvsmart from "/public/images/tvsmart.jpg";
 
 const categories: CategoryCardProps[] = [
   {
-    categoryImage: bluetooth speaker,
+    categoryImage: speaker,
     categoryName: "Bluetooth speaker",
   },
   {
@@ -16,7 +16,7 @@ const categories: CategoryCardProps[] = [
     categoryName: "Headphones",
   },
   {
-    categoryImage: television,
+    categoryImage: tvsmart,
     categoryName: "Television",
   },
 ];

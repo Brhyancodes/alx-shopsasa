@@ -15,9 +15,9 @@ function Mission() {
           <p className="text-white text-2xl md:text-4xl font-semibold ">
             Curious about our Mission?
           </p>
-          <p className="text-white md:text-2xl  leading-6 ">
-           We are dedicated to empowering the youth and campus comrades. Our goal is to create job opportunities in today's digital age and nurture future digital leaders!
-          </p>
+          <p className="text-white md:text-2xl leading-6">
+  We are dedicated to empowering the youth and campus comrades. Our goal is to create job opportunities in today&apos;s digital age and nurture future digital leaders!
+</p>
         </div>
         <div className="bg-[url(@/public/images/vision bg)] bg-cover bg-center aspect-square rounded-full h-72 md:h-96 w-72 md:rounded-[53px] self-center"></div>
       </div>
