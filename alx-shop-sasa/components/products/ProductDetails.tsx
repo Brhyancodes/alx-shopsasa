@@ -7,7 +7,7 @@ function ProductDetail({ imageUrl, name, price }: ProductDetailProps) {
   const addItemToCart = () => {};
 
   return (
-    <article className="max-w-md bg-[#F0F0F0] rounded-xl pb-3 shadow-md">
+    <article className="max-w-md bg-[#FAFAFA] rounded-xl pb-3 shadow-md">
       <Image
         src={imageUrl}
         alt={name}
@@ -15,15 +15,15 @@ function ProductDetail({ imageUrl, name, price }: ProductDetailProps) {
       />
 
       <div className="m-4">
-        <p className="text-2xl text-mold-green font-semibold">{name}</p>
+        <p className="text-2xl text-[#FFB400] font-semibold">{name}</p>
         <p
-          className={`${nunito.className} font-medium text-lg text-mold-green  mb-4`}
+          className={`${nunito.className} font-medium text-lg text-[#008080] mb-4`}
         >
           Ksh. {price}
         </p>
         <Button
           action={addItemToCart}
-          moreStyles="w-3/5 py-2 text-white md:text-lg font-bold bg-mold-green hover:bg-moss-green rounded-md cursor-pointer"
+          moreStyles="w-3/5 py-2 text-white md:text-lg font-bold bg-[#008080] hover:bg-[#5E2A84] rounded-md cursor-pointer"
         >
           Add to cart
         </Button>

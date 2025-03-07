@@ -1,23 +1,28 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
-:root {
+@theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-mold-green: #496C5B;
-  --color-night: #2d3134;
-  --color-tangerine: #e9591b;
-  --color-moss-green: #204e51;
-  --color-avocado: #1f4e3c;
-  --color-dark-green: #062F1F;
-  --color-imperial-red: #ED2939;
-  --color-lime-green: #06945D;
-  --color-grey: #F0F0F0;
+  /* Primary Colors */
+  --color-teal: #008080; /* Vibrant Teal */
+  --color-mustard: #FFB400; /* Bright Mustard */
+  --color-electric-blue: #0073E6; /* Electric Blue */
 
+  /* Secondary Colors */
+  --color-sunset-orange: #FF5722; /* Sunset Orange */
+  --color-deep-purple: #5E2A84; /* Deep Purple */
+  --color-mint-green: #A7F3D0; /* Soft Mint Green */
+
+  /* Neutral Colors */
+  --color-cool-grey: #E5E7EB; /* Cool Grey */
+  --color-charcoal: #1E293B; /* Charcoal Black */
+  --color-warm-white: #FAFAFA; /* Warm White */
+
+  /* Shadows */
   --inset-shadow-overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
   --inset-shadow-translucent: inset 0 0 0 600px rgba(0, 0, 0, 0.4);
 
-  --bg-postion: 70%;
+  /* Background Position */
+  --bg-position: 70%;
 }

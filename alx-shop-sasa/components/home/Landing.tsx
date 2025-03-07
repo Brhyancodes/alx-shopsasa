@@ -4,20 +4,20 @@ import Link from "next/link";
 function Landing() {
   return (
     <section
-      className={` text-white min-h-screen bg-[url(/public/images/shop.jpg)] md:bg-[url(@/public/images/home.png)] bg-no-repeat bg-cover bg-center md:bg-(position:--bg-postion) lg:bg-center inset-shadow-overlay md:inset-shadow-none flex justify-center items-center  `}
+      className={`text-white min-h-screen bg-[url(/public/images/shop.jpg)] md:bg-[url(/public/images/home.png)] bg-no-repeat bg-cover bg-center md:bg-[position:70%] lg:bg-center inset-shadow-overlay md:inset-shadow-none flex justify-center items-center`}
     >
-      <div className="pl-10 lg:pl-0 text-balance  max-w-5xl ">
-        <h2 className="font-bold text-pretty  text-2xl leading-12 md:text-3xl lg:text-5xl">
+      <div className="pl-10 lg:pl-0 text-balance max-w-5xl">
+        <h2 className="font-bold text-[#FFB400] text-2xl leading-12 md:text-3xl lg:text-5xl">
           Karibu ShopSasa empowering comrades!
         </h2>
-        <p className="my-8  text-lg md:text-2xl font-normal">
+        <p className="my-8 text-lg md:text-2xl font-normal">
           🔥 Buy & Sell with Ease | 💰 Affordable Deals | 📦 Seamless Shopping Experience
         </p>
         <Link
           href="/signup"
-          className="flex justify-center items-center bg-mold-green w-2/3 max-w-80 py-4 text-lg rounded-lg tracking-wider hover:bg-lime-green "
+          className="flex justify-center items-center bg-[#008080] w-2/3 max-w-80 py-4 text-lg rounded-lg tracking-wider hover:bg-[#1F4E3C]"
         >
-          <span>Get Started</span>
+          <span>Ready, Set, Shop, Comrade!</span>
           <ArrowUpRight size={24} color="#ffffff" />
         </Link>
       </div>

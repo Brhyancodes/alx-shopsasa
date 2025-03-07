@@ -10,7 +10,7 @@ const info: CompanyInfoProps[] = [
   {
     Icon: IoHome,
     title: "Address",
-    text: "50211 street, Nairobi,Lavington",
+    text: "50211 street, Nairobi, Lavington",
   },
   {
     Icon: IoMail,
@@ -27,7 +27,7 @@ const info: CompanyInfoProps[] = [
 function Footer() {
   return (
     <footer className={`${nunito.className}`}>
-      <div className="bg-avocado grid sm:grid-cols-3  gap-12  py-10 pl-6  lg:py-14 lg:px-12">
+      <div className="bg-[#FAFAFA] grid sm:grid-cols-3 gap-12 py-10 pl-6 lg:py-14 lg:px-12">
         <Subscription />
         <FooterNav />
         <div>
@@ -37,8 +37,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-dark-green text-white text-sm py-4">
-        <p>&copy; copyright {new Date().getFullYear()} All rights reserved.</p>
+      <div className="flex justify-center items-center bg-[#1E293B] text-white text-sm py-4">
+        <p>&copy; Copyright {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </footer>
   );

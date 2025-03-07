@@ -3,9 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 
 // Import the images
-import dennis from '/public/images/dennis.png'; 
-import kevin from '/public/images/kevin.png'; 
-import michelle from '/public/images/michelle.png'; 
+import dennis from '@/public/images/dennis.png'; 
+import kevin from '@/public/images/kevin.png'; 
+import michelle from '@/public/images/michelle.png'; 
 
 const testimonials: TestimonialCardProps[] = [
   {
@@ -31,11 +31,11 @@ const TestimonialList: React.FC = () => {
       {testimonials.map((testimonial, index) => (
         <div key={index}>
           <Image 
-            src={testimonial.image} // Use the src prop for the image
+            src={testimonial.image} 
             alt={testimonial.name} 
-            width={500} // Set a width for the image
-            height={300} // Set a height for the image
-            layout="responsive" // Optional: Use responsive layout
+            width={500} 
+            height={300} 
+            layout="responsive" 
           />
           <h3>{testimonial.name}</h3>
           <p>{testimonial.message}</p>

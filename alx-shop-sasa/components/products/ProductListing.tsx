@@ -1,9 +1,9 @@
 import { ProductDetailProps } from "@/interfaces";
-import ProductDetails from "/products/ProductDetails";
-import headphones from "/public/images/heaphones.jpg";
-import laptop from "/public/images/laptop.jpg";
-import charger from "/public/images/charger.jpg";
-import watch from "/public/images/watch.jpg";
+import ProductDetail from "./ProductDetails";
+import headphones from "@/public/images/heaphones.jpg";
+import laptop from "@/public/images/laptop.jpg";
+import charger from "@/public/images/charger.jpg";
+import watch from "@/public/images/watch.jpg";
 
 import Link from "next/link";
 
@@ -47,7 +47,7 @@ function ProductListing() {
     <div className="w-11/12 max-w-[85%] mx-auto my-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {items.map((item: ProductDetailProps, idx: number) => (
         <Link key={idx} href={`/products/${encodeURIComponent(item.id)}`}>
-          <ProductDetails {...item} />
+          <ProductDetail {...item} />
         </Link>
       ))}
     </div>

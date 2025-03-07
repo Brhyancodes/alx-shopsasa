@@ -9,7 +9,7 @@ function AuthButton({ children, moreStyles }: AuthButtonProps) {
     <button
       type="submit"
       disabled={isSubmitting}
-      className={`${moreStyles} ${nunito.className} bg-lime-green text-white font-semibold rounded-4xl text-xl capitalize tracking-wider cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-emerald-700  active:scale-95 `}
+      className={`${moreStyles} ${nunito.className} bg-[#FFB400] text-white font-semibold rounded-4xl text-xl capitalize tracking-wider cursor-pointer disabled:bg-[#E5E7EB] disabled:cursor-not-allowed hover:bg-[#008080] active:scale-95`} // ShopSasa Colors
     >
       {isSubmitting ? <ClipLoader size={24} color="#ffffff" /> : children}
     </button>

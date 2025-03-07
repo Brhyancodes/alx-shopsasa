@@ -10,33 +10,28 @@ function AccordionItem({ question, answer }: FAQ_QuestionProps) {
   const handleAction = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <article className="shadow-lg">
       <div
         className={`${
-          isOpen ? "bg-tangerine rounded-t-lg" : "bg-white rounded-lg"
-        } py-3 flex justify-between items-center ${
-          quicksand.className
-        } cursor-pointer`}
+          isOpen
+            ? "bg-[#FF5722] text-white rounded-t-lg" // Sunset Orange
+            : "bg-[#FAFAFA] text-[#1E293B] rounded-lg" // Warm White & Charcoal Black
+        } py-3 flex justify-between items-center ${quicksand.className} cursor-pointer`}
         onClick={handleAction}
       >
-        <p
-          className={`${
-            isOpen ? "text-white" : "text-black "
-          } font-bold  pl-4 text-base md:text-lg`}
-        >
-          {question}
-        </p>
+        <p className="font-bold pl-4 text-base md:text-lg">{question}</p>
         <button className="pr-4">
           {isOpen ? (
-            <ChevronUp size="24" color="#fff" />
+            <ChevronUp size="24" color="white" />
           ) : (
-            <ChevronDown size="24" color="#000" />
+            <ChevronDown size="24" color="#1E293B" /> // Charcoal Black
           )}
         </button>
       </div>
       <div
-        className={`bg-white text-night overflow-hidden  ${
+        className={`bg-[#FAFAFA] text-[#1E293B] overflow-hidden ${
           isOpen ? "text-opacity-100 rounded-b-lg" : "text-opacity-0"
         } transition-all duration-300`}
         ref={contentRef}
@@ -44,7 +39,7 @@ function AccordionItem({ question, answer }: FAQ_QuestionProps) {
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
         }}
       >
-        <p className=" text-base md:max-w-[90%] md:text-lg p-4">{answer}</p>
+        <p className="text-base md:max-w-[90%] md:text-lg p-4">{answer}</p>
       </div>
     </article>
   );
