@@ -4,7 +4,7 @@ import Link from "next/link";
 function Landing() {
   return (
     <section
-      className={`text-white min-h-screen bg-[url(/public/images/shop.jpg)] md:bg-[url(/public/images/home.png)] bg-no-repeat bg-cover bg-center md:bg-[position:70%] lg:bg-center inset-shadow-overlay md:inset-shadow-none flex justify-center items-center`}
+      className={`text-white min-h-screen bg-[url(@/public/images/shop.jpg)] md:bg-[url(@public/images/home.jpg)] bg-no-repeat bg-cover bg-center md:bg-[position:70%] lg:bg-center inset-shadow-overlay md:inset-shadow-none flex justify-center items-center`}
     >
       <div className="pl-10 lg:pl-0 text-balance max-w-5xl">
         <h2 className="font-bold text-[#FFB400] text-2xl leading-12 md:text-3xl lg:text-5xl">

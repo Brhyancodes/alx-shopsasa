@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "@/public/images/logo.png";
 import Image from "next/image";
 import { IoMdSend } from "react-icons/io";
-import Button from "./Button"; // Ensure Button is correctly implemented
+import Button from "./Button"; 
 
 function Subscription() {
   const [email, setEmail] = useState("");
@@ -39,7 +39,7 @@ function Subscription() {
           value={email}
           onChange={(e) => setEmail(e.target.value.trim())}
           className="border-none text-[#1E293B] pl-3 flex-1 text-base outline-none placeholder:text-[#A7F3D0] w-full bg-transparent py-2"
-          placeholder="Enter your email"
+          placeholder="Your email? e.g Brhyancodes@gmail.com"
         />
         <Button action={subscribe} moreStyles="mx-2 bg-[#FF5722] hover:bg-[#FFB400] text-white rounded-full">
           <IoMdSend size={28} color="#ffffff" />

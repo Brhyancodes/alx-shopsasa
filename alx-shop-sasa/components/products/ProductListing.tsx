@@ -1,9 +1,9 @@
 import { ProductDetailProps } from "@/interfaces";
 import ProductDetail from "./ProductDetails";
-import headphones from "@/public/images/heaphones.jpg";
-import laptop from "@/public/images/laptop.jpg";
-import charger from "@/public/images/charger.jpg";
-import watch from "@/public/images/watch.jpg";
+import headphones from "@public/images/heaphones.jpg";
+import laptop from "@public/images/laptop.jpg";
+import charger from "@public/images/charger.jpg";
+import watch from "@public/images/watch.jpg";
 
 import Link from "next/link";
 
@@ -55,3 +55,4 @@ function ProductListing() {
 }
 
 export default ProductListing;
+                     
