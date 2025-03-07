@@ -20,7 +20,7 @@ function Mission() {
             job opportunities in today&apos;s digital age and nurture future digital leaders!
           </p>
         </div>
-        <div className="bg-[url(@public/images/vision.jpg)] bg-cover bg-center aspect-square rounded-full h-72 md:h-96 w-72 md:rounded-[53px] self-center inset-shadow-translucent"></div>
+        <div className="bg-[url(@/public/images/vision.jpg)] bg-cover bg-center aspect-square rounded-full h-72 md:h-96 w-72 md:rounded-[53px] self-center inset-shadow-translucent"></div>
       </div>
     </section>
   );

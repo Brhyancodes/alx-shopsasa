@@ -8,7 +8,7 @@ function Subscription() {
   const [email, setEmail] = useState("");
 
   const subscribe = () => {
-    console.log("You have subscribed to our mailing list");
+    console.log("👉 Oyaaa! You’re officially part of the ShopSasa squad. Big things loading!");
   };
 
   return (
