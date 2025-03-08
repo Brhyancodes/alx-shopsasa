@@ -27,7 +27,7 @@ const info: CompanyInfoProps[] = [
 function Footer() {
   return (
     <footer className={`${nunito.className}`}>
-      <div className="bg-[#FAFAFA] grid sm:grid-cols-3 gap-12 py-10 pl-6 lg:py-14 lg:px-12">
+      <div className="bg-[#008080] grid sm:grid-cols-3 gap-12 py-10 pl-6 lg:py-14 lg:px-12 text-[#FAFAFA]">
         <Subscription />
         <FooterNav />
         <div>
@@ -37,7 +37,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center bg-[#1E293B] text-white text-sm py-4">
+      <div className="flex justify-center items-center bg-[#1E293B] text-[#FAFAFA] text-sm py-4">
         <p>&copy; Copyright {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </footer>

@@ -26,6 +26,16 @@ const questions: FAQ_QuestionProps[] = [
     answer:
       "Absolutely! We've partnered with various parcel centers where, once your product is delivered, you can go, collect it, and pay at the center.",
   },
+  {
+    question: "Who is the founder of ShopSasa?",
+    answer:
+      "Brian Wakhale,a Front-End Engineer is the founder,currently looking forwad to expand the platform to other campuses.",
+  },
+  {
+    question: "Are you open to partnering with other Developers?",
+    answer:
+      "Absolutely!Our founder Brian Wakhale is open,reach out to him through the contact page..",
+  },
 ];
 
 function FAQ() {
@@ -38,7 +48,7 @@ function FAQ() {
         <div className="w-[60px] h-[5px] bg-[--color-electric-blue] rounded-lg mx-auto mt-2"></div>
       </div>
 
-      <div className="bg-[--color-warm-white] p-6 w-11/12 mx-auto mt-10 rounded-2xl space-y-5 shadow-lg border-l-4 border-[--color-sunset-orange]">
+      <div className="bg-[--color-warm-white] p-6 w-11/12 mx-auto mt-10 rounded-2xl space-y-5 shadow-lg border-l-4 border-[--color-vibrant-teal]">
         {questions.map((item, idx) => (
           <AccordionItem key={idx} {...item} />
         ))}
