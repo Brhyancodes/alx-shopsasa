@@ -75,7 +75,7 @@ function ProductListing() {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors duration-300 mt-auto"
                 onClick={(e) => {
                   e.preventDefault();
-                  // Add your cart functionality here
+              
                   console.log(`Added ${item.name} to cart`);
                 }}
               >
