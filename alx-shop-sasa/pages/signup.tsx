@@ -44,7 +44,7 @@ function Signup() {
         <Link href="/">
           <Image
             src={logo}
-            alt="ukulima logo"
+            alt="ShopSasa"
             className="w-9 h-9 sm:w-12 sm:h-12"
           />
         </Link>
@@ -99,7 +99,7 @@ function Signup() {
                 </Link>
               </p>
               <p className="text-sm text-lime-green">
-                copyright {new Date().getFullYear()}, All rights reserved.
+                Copyright {new Date().getFullYear()}, All rights reserved.
               </p>
             </div>
           </div>

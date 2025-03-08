@@ -49,8 +49,8 @@ function Testimonials() {
               {testimonial.name}
             </h3>
             <p className="text-center text-gray-600">
-              "{testimonial.message}"
-            </p>
+  &ldquo;{testimonial.message}&rdquo;
+</p>
           </div>
         ))}
       </div>

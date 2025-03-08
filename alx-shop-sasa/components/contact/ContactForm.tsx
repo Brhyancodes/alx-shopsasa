@@ -4,7 +4,7 @@ import { contactFormSchema } from "@/schemas";
 import AuthButton from "../common/AuthButton";
 
 const initialValues: ContactFormValues = {
-  firstName: "",
+  first_name: "",
   email: "",
   message: "",
 };
