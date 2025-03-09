@@ -78,7 +78,7 @@ function Signup() {
               </a>
             </div>
 
-            <p className="text-sm text-gray-400 mt-4">&copy; {new Date().getFullYear()} All rights reserved.</p>
+            <p className="text-sm text-gray-400 mt-4">&copy; {new Date().getFullYear()} ShopSasa |All rights reserved.</p>
           </div>
         </Form>
       </Formik>

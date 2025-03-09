@@ -39,7 +39,7 @@ function Subscription() {
           value={email}
           onChange={(e) => setEmail(e.target.value.trim())}
           className="border-none text-[#FAFAFA] pl-3 flex-1 text-base outline-none placeholder:text-[#A7F3D0] w-full bg-transparent py-2"
-          placeholder="Your email? e.g Brhyancodes@gmail.com"
+          placeholder="Email i.e xyz@gmail.com"
         />
         <Button action={subscribe} moreStyles="mx-2 bg-[#FF5722] hover:bg-[#FFB400] text-white rounded-full">
           <IoMdSend size={28} color="#ffffff" />

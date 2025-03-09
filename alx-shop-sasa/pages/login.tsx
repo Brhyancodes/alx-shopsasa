@@ -117,9 +117,9 @@ function Login() {
                     &nbsp;Sign up
                   </Link>
                 </p>
-                <p className="text-soft-mint-green">
+                {/* <p className="text-soft-mint-green">
                   &copy; {new Date().getFullYear()}, All rights reserved.
-                </p>
+                </p> */}
               </div>
             </div>
           </Form>
@@ -143,7 +143,7 @@ function Login() {
             </a>
           </div>
 
-          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ShopShasa |All rights reserved.</p>
         </div>
       </div>
     </section>

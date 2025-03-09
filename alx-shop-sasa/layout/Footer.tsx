@@ -56,7 +56,7 @@ function Footer() {
           </a>
         </div>
 
-        <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} ShopSasa| All rights reserved.</p>
       </div>
     </footer>
   );
