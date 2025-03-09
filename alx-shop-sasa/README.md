@@ -1,7 +1,6 @@
 # Dynamic E-Commerce Product Catalog
 
 ## 🛒 Overview
-![ShopSasa Overview](@/public/images/SHOPSASA.png)
 
 This project is a **dynamic e-commerce product catalog** aimed at connecting young people in campus (referred to as "Comrades" in Kenya) to sell and purchase products at an affordable price. The platform offers a seamless browsing experience with advanced filtering, sorting, and responsive design to enhance user interaction.
 
