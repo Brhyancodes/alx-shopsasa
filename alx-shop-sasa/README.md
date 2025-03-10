@@ -24,7 +24,7 @@ This project is a **dynamic e-commerce product catalog** aimed at connecting you
 
 1. **API Data Integration**
    - Fetch and display product data dynamically using API calls.
-   - Error handling and loading states to improve UX.
+   - Error handling and loading states to improve User experience.
 
 2. **Filtering and Sorting**
    - Filter products by category and other criteria.
