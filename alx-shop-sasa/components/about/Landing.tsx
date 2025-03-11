@@ -2,7 +2,7 @@ import { nunito } from "@/fonts";
 
 function Landing() {
   return (
-    <section className="min-h-screen text-white bg-[url(@/public/images/landing1.jpg)] bg-cover bg-center flex items-center inset-shadow-overlay">
+    <section className="min-h-screen text-white bg-[url(/images/landing1.jpg)] bg-cover bg-center flex items-center inset-shadow-overlay">
       <div className="space-y-8 pl-6 lg:pl-16">
         <h2
           className={`${nunito.className} font-bold text-[34px] md:text-5xl lg:text-6xl lg:max-w-3xl text-[--color-tangerine]`}

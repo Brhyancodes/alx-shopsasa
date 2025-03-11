@@ -21,7 +21,7 @@ function Vision() {
             affordable products.
           </p>
         </div>
-        <div className="bg-[url(@/public/images/mission.jpg)] bg-cover bg-center aspect-square inset-shadow-translucent rounded-full h-72 md:h-96 w-72 md:rounded-[53px] self-center"></div>
+        <div className="bg-[url(/images/mission.jpg)] bg-cover bg-center aspect-square inset-shadow-translucent rounded-full h-72 md:h-96 w-72 md:rounded-[53px] self-center"></div>
       </div>
     </section>
   );

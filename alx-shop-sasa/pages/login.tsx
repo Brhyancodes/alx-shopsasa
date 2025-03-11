@@ -33,7 +33,7 @@ function Login() {
 
   return (
     <section className={`${nunito.className} flex`}>
-      <div className="hidden md:flex bg-[url(@/public/images/sign.jpg)] bg-left-bottom bg-cover justify-center inset-shadow-translucent flex-1">
+      <div className="hidden md:flex bg-[url(/images/sign.jpg)] bg-left-bottom bg-cover justify-center inset-shadow-translucent flex-1">
         <article className="space-y-12 text-[#FAFAFA] mt-28 text-center">
           <h2 className="font-bold text-4xl text-bright-mustard">ShopSasa</h2>
           <div className="italic font-normal space-y-4 text-lg max-w-[350px]">
