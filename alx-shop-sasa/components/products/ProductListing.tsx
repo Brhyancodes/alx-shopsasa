@@ -22,7 +22,7 @@ export const items: ProductDetailProps[] = [
     name: "Gaming Laptop",
     category: "Electronics",
     price: "30000",
-    description: "Lorem ipsum lorem ipsum",
+    description: "Best Laptop for Video Games",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const items: ProductDetailProps[] = [
     name: "Smart Watch",
     category: "Accessories",
     price: "3000",
-    description: "Lorem ipsum lorem ipsum",
+    description: "A quality and durable watch",
   },
 ];
 
