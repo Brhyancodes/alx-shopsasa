@@ -1,11 +1,10 @@
 import { ProductDetailProps } from "@/interfaces";
-import ProductDetail from "./ProductDetails";
+import Image from "next/image";
+import Link from "next/link";
 import headphones from "@/public/images/heaphones.jpg";
 import laptop from "@/public/images/laptop.jpg";
 import charger from "@/public/images/charger.jpg";
 import watch from "@/public/images/watch.jpg";
-import Image from "next/image";
-import Link from "next/link";
 
 export const items: ProductDetailProps[] = [
   {
@@ -42,12 +41,28 @@ export const items: ProductDetailProps[] = [
   },
 ];
 
-function ProductListing() {
+interface ProductListingProps {
+  filteredItems?: ProductDetailProps[];
+}
+
+function ProductListing({ filteredItems }: ProductListingProps) {
+  // Use filteredItems if provided, otherwise use all items
+  const displayItems = filteredItems || items;
+
+  // If no products are available
+  if (displayItems.length === 0) {
+    return (
+      <div className="container mx-auto py-8 px-4 text-center">
+        <p className="text-xl text-gray-600">No products found. Try changing your filters.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto py-8 px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {items.map((item: ProductDetailProps, idx: number) => (
-          <div key={idx} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+        {displayItems.map((item: ProductDetailProps, idx: number) => (
+          <div key={item.id} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
             <Link
               href={`/products/${encodeURIComponent(item.id)}`}
               className="block relative w-full pt-[75%]"
@@ -75,7 +90,6 @@ function ProductListing() {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors duration-300 mt-auto"
                 onClick={(e) => {
                   e.preventDefault();
-              
                   console.log(`Added ${item.name} to cart`);
                 }}
               >
