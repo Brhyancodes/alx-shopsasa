@@ -5,6 +5,7 @@ export interface ButtonProps {
     children: ReactNode,
     moreStyles?: string
     action: () => void
+     disabled?: boolean;
 }
 
 export interface CompanyInfoProps {

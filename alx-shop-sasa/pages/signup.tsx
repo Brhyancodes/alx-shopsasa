@@ -16,8 +16,8 @@ function Signup() {
   const togglePassword = () => setShowPassword(!showPassword);
 
   const initialValues: SignUpInitialValues = {
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
     phone: "",
     password: "",
